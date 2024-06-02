@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#343A40"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".ui.pagos.PagosFragment">
+
+    <ListView
+        android:id="@+id/lvContratos2"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        >
+
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#343A40"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".ui.contratos.ContratoDetalleFragment">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="INFORMACIÓN DEL CONTRATO"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#343A40">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tvCodigoContrato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="Código Contrato"
+            android:inputType="textPersonName"
+            android:textColor="#343A40"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#343A40">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tvInicioContrato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="Fecha de Inicio"
+            android:inputType="textPersonName"
+            android:textColor="#343A40"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#343A40">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tvFinContrato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="Fecha Finalización"
+            android:inputType="textPersonName"
+            android:textColor="#343A40"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#343A40">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tvMontoContrato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="Monto de Alquiler"
+            android:inputType="text"
+            android:textColor="#343A40"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#343A40">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tvInquilinoContrato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="Inquilino"
+            android:inputType="text"
+            android:textColor="#343A40"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#343A40">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tvInmuebleContrato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="Inmueble"
+            android:inputType="text"
+            android:textColor="#343A40"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btPagos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/button_rounded"
+        android:baselineAligned="false"
+        android:text="PAGOS"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="20dp"
+        app:layout_constraintTop_toBottomOf="parent" />
+</LinearLayout>

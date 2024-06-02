@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#343A40"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".ui.perfil.PerfilFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#343A40"
+        android:layout_marginTop="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etDni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="#343A40"
+            android:hint="Dni"
+            android:inputType="textPersonName"
+            android:textSize="20sp"
+            android:enabled="false"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#343A40"
+        android:layout_marginTop="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etApellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="#343A40"
+            android:hint="Apellido"
+            android:inputType="textPersonName"
+            android:textSize="20sp"
+            android:enabled="false"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#343A40"
+        android:layout_marginTop="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="Nombre"
+            android:inputType="textPersonName"
+            android:textColor="#343A40"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#343A40"
+        android:layout_marginTop="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etDireccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="Dirección"
+            android:inputType="text"
+            android:textColor="#343A40"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#343A40"
+        android:layout_marginTop="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="Telefono"
+            android:inputType="text"
+            android:textColor="#343A40"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btAceptar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_rounded"
+        android:text="Aceptar"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btEditar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_rounded"
+        android:text="Editar"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btCambiarPass"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_rounded"
+        android:text="Cambiar Contraseña"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"/>
+
+</LinearLayout>
