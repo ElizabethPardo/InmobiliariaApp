@@ -57,7 +57,7 @@ public class InmuebleDetalleFragment extends Fragment {
                 tvTipo.setText(inmueble.getTipo());
                 cbEstado.setChecked(inmueble.getEstado());
                 Glide.with(getContext())
-                        .load("http://192.168.100.9:45475/" + inmueble.getImagen())
+                        .load("http://192.168.100.9:45477/" + inmueble.getImagen())
                         .diskCacheStrategy(DiskCacheStrategy.ALL)
                         .into(imageInmueble);
                 cbEstado.setOnClickListener(new View.OnClickListener() {

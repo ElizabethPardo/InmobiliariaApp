@@ -46,6 +46,22 @@ public class InmuebleDetalleViewModel extends  AndroidViewModel {
     }
     public void cargar(Bundle b){
         i = (Inmueble) b.getSerializable("inmueble");
+
+        String tipo=null;
+        String uso=null;
+
+        switch(i.getTipo()) {
+            case "1": tipo= "Local";break;
+            case "2": tipo="Deposito"; break;
+            case "3": tipo="Casa";break;
+            case "4": tipo="Departamento";break;
+        }
+        if(i.getUso()== "1")
+            uso="Comercial";
+        else
+            uso="Residencial";
+        i.setTipo(tipo);
+        i.setUso(uso);
         inmuebleM.setValue(i);
     }
     public void editarInmueble(Inmueble inmu){

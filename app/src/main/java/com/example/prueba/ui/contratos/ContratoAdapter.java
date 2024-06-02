@@ -65,7 +65,7 @@ private ContratoDetalleViewModel vm;
 
         holder.tvDireccionC.setText(lista.get(position).getInmueble().getDireccion());
         Glide.with(context)
-                .load("http://192.168.100.9:45475/" + lista.get(position).getInmueble().getImagen())
+                .load("http://192.168.100.9:45477/" + lista.get(position).getInmueble().getImagen())
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .into(holder.ivInmuebleC);
 

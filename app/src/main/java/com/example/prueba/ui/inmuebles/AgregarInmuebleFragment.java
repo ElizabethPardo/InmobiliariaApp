@@ -69,6 +69,15 @@ public class AgregarInmuebleFragment extends Fragment {
 
                 Inmueble inmueble= new Inmueble(direccion,ambientes,tipo,uso,precio,false,"");
                 vm.NuevoInmueble(inmueble,uriFoto);
+
+                binding.etDireInmueble.setEnabled(false);
+                binding.etAmbiestesInmueble.setEnabled(false);
+                binding.etPrecioInmueble.setEnabled(false);
+                binding.spTipo.setEnabled(false);
+                binding.spUso.setEnabled(false);
+
+                binding.btAgregar.setVisibility(View.INVISIBLE);
+                binding.btCargarFoto.setVisibility(View.INVISIBLE);
             }
 
 

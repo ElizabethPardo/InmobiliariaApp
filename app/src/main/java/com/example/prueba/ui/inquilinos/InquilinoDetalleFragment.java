@@ -45,7 +45,7 @@ public class InquilinoDetalleFragment extends Fragment {
                 tvDniInquilino.setText(inquilino.getDni()+"");
                 tvMailInquilino.setText(inquilino.getEmail());
                 tvTelInquilino.setText(inquilino.getTelefono());
-                tvGaranteInquilino.setText(inquilino.getNombreGarante());
+                tvGaranteInquilino.setText(inquilino.getNombreGarante() + inquilino.getApellidoGarante());
                 tvTelGarante.setText(inquilino.getTelefonoGarante());
             }
         });
